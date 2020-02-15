@@ -1,0 +1,330 @@
+@media screen and (max-width: 992px) {
+    .navMenu>div>a {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    header {
+        background-image: url("../image/thairish1090.jpg");
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .picRestaurant {
+        grid-column: 1/7;
+        grid-row: 2/4;
+    }
+
+    .textRestaurant {
+        grid-column: 7/13;
+        grid-row: 2/3;
+        padding-right: 10px
+    }
+
+    .textFunction {
+        grid-column: 1/7;
+        grid-row: 4/5;
+        padding-left: 10px;
+    }
+
+    .picFunction {
+        grid-column: 7/13;
+        grid-row: 3/5;
+    }
+
+    .starterFunction {
+        grid-column: 2/5;
+        text-align: center;
+    }
+
+    .dessertFunction {
+        grid-column: 9/12;
+        text-align: center;
+    }
+
+    .picBar {
+        grid-column: 1/8;
+        grid-row: 7/9;
+    }
+
+    .textBar {
+        grid-column: 8/12;
+        grid-row: 7/8;
+    }
+
+    .picBarDown {
+        grid-column: 7/13;
+        grid-row: 8/10;
+    }
+
+    .brieMenu {
+        grid-column: 2/6;
+        grid-row: 11/12;
+        margin-top: 50px;
+    }
+
+    .burgerMenu {
+        display: none;
+    }
+
+    .wbmSaladMenu {
+        grid-column: 8/12;
+        grid-row: 14/16;
+    }
+
+    .omeletteMenu {
+        grid-column: 8/12;
+        grid-row: 11/14;
+        margin-top: 50px;
+    }
+
+    .soupMenu {
+        grid-column: 2/6;
+        grid-row: 14/16;
+    }
+
+    .linkMenu {
+        grid-column: 5/9;
+        grid-row: 12/14;
+    }
+
+    .mapContact {
+        grid-column: 1/13;
+        grid-row: 17/18;
+        margin-top: 50px;
+    }
+
+    .contact {
+        grid-column: 3/11;
+        grid-row: 18/19;
+    }
+
+    .adresseContact {
+        grid-column: 3/7;
+        grid-row: 19/20;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /* Nav */
+    .navMenu {
+        position: absolute;
+        right: 0;
+        height: calc(100vh - 50px);
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #2a2a28;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .navMenu div {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navActive {
+        transform: translateX(0%);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    header {
+        background-image: url("../image/thairish700.jpg");
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .picRestaurant {
+        grid-column: 1/13;
+        grid-row: 3/4;
+    }
+
+    .picRestaurant>img {
+        min-width: 100vw;
+    }
+
+    .textRestaurant {
+        grid-column: 2/12;
+        grid-row: 2/3;
+        padding-right: 10px
+    }
+
+    #function {
+        grid-row: 3/4;
+    }
+
+    .titleFunction {
+        text-align: left;
+    }
+
+    .textFunction {
+        grid-column: 2/12;
+        grid-row: 4/5;
+        padding-left: 10px;
+    }
+
+    .picFunction {
+        grid-column: 1/13;
+        grid-row: 5/6;
+    }
+
+    .picFunction>img {
+        min-width: 100vw;
+    }
+
+    .setMenuH {
+        grid-column: 1/7;
+        grid-row: 6/7;
+        text-align: right;
+        margin: 5px;
+    }
+
+    .setMenuP {
+        grid-column: 7/13;
+        grid-row: 6/7;
+        margin: 5px;
+    }
+
+    .starterFunction {
+        grid-column: 2/12;
+        grid-row: 7/8;
+        margin-bottom: 0;
+    }
+
+    .mainFunction {
+        grid-column: 2/12;
+        grid-row: 8/9;
+    }
+
+    .dessertFunction {
+        grid-column: 2/12;
+        grid-row: 9/10;
+    }
+
+    #bar {
+        grid-row: 10/11;
+    }
+
+    .picBar {
+        grid-column: 1/13;
+        grid-row: 10/11;
+    }
+
+    .picBar>img {
+        min-width: 100vw;
+    }
+
+    .textBar {
+        grid-column: 2/12;
+        grid-row: 11/12;
+        padding-right: 0;
+    }
+
+    .picBarDown {
+        grid-column: 1/13;
+        grid-row: 12/13;
+    }
+
+    .picBarDown>img {
+        min-width: 100vw;
+        border: none;
+    }
+
+    .openingBar {
+        grid-column: 2/12;
+        grid-row: 13/14;
+        text-align: center;
+    }
+
+    #menu {
+        grid-row: 13/14;
+    }
+
+    .brieMenu {
+        grid-column: 2/6;
+        grid-row: 17/18;
+        margin-top: 50px;
+    }
+
+    .burgerMenu {
+        display: none;
+    }
+
+    .wbmSaladMenu {
+        grid-column: 8/12;
+        grid-row: 14/16;
+    }
+
+    .omeletteMenu {
+        grid-column: 8/12;
+        grid-row: 17/18;
+        margin-top: 50px;
+    }
+
+    .soupMenu {
+        grid-column: 2/6;
+        grid-row: 14/16;
+    }
+
+    .linkMenu {
+        grid-column: 2/12;
+        grid-row: 16/17;
+    }
+
+    #contact {
+        grid-row: 18/19;
+    }
+
+    .mapContact {
+        grid-column: 1/13;
+        grid-row: 19/20;
+        margin-top: 50px;
+        min-width: 100vw;
+    }
+
+    .contact {
+        grid-column: 2/12;
+        grid-row: 20/21;
+    }
+
+    .adresseContact {
+        grid-column: 3/11;
+        grid-row: 21/22;
+    }
+}

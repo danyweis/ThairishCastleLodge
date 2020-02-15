@@ -1,0 +1,146 @@
+/* font-family: 'Pathway Gothic One', sans-serif;
+font-family: 'Oranienbaum', serif */
+/* Generel Rules */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oranienbaum', serif;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.backCork {
+    display: block;
+    position: absolute;
+    top: -25px;
+    left: 0px;
+}
+
+.backCork img {
+    width: auto;
+    height: 120px;
+}
+
+.menuTitle {
+    margin-top: 65px;
+    text-align: center;
+}
+
+.thairishLinks {
+    position: fixed;
+    height: 65px;
+    width: 100vw;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 2px 2px 3px rgba(40, 40, 40, 0.4);
+}
+
+.backWaterford {
+    display: block;
+    position: absolute;
+    top: -25px;
+    right: 0px;
+}
+
+.backWaterford img {
+    width: auto;
+    height: 120px;
+}
+
+.allergen p {
+    text-align: center;
+    width: 75%;
+    margin: 20px auto;
+    color: red;
+    text-shadow: 2px 2px 3px rgba(40, 40, 40, 0.4);
+}
+
+.allergen h4 {
+    text-align: center;
+    width: 75%;
+    margin: 20px auto;
+}
+
+.allergenList {
+    display: flex;
+    justify-content: center;
+}
+
+.menuNumbers {
+    color: blue;
+}
+
+.menuItem {
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.breakfast,
+.dessert,
+.main,
+.soupSandwich,
+.starter,
+.thaiMenu {
+    display: grid;
+    grid-template-columns: repeat(12, 2fr);
+    grid-gap: 25px;
+    text-align: justify;
+}
+
+.left {
+    /*grid-column: 3/7;*/
+    grid-column: 3/11;
+    box-shadow: 2px 2px 3px rgba(40, 40, 40, 0.4);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.right {
+    /*grid-column: 7/11;*/
+    grid-column: 3/11;
+    box-shadow: 2px 2px 3px rgba(40, 40, 40, 0.4);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.full {
+    grid-column: 3/11;
+}
+
+@media screen and (max-width: 996px) {
+    .allergen p {
+        text-align: center;
+        width: 50%;
+        margin: 20px auto;
+    }
+
+    .allergenList {
+        font-size: 12px;
+    }
+
+    .left {
+        grid-column: 3/11;
+        box-shadow: 2px 2px 3px rgba(40, 40, 40, 0.4);
+        padding: 5px;
+        border-radius: 3px;
+    }
+
+    .right {
+        grid-column: 3/11;
+        box-shadow: 2px 2px 3px rgba(40, 40, 40, 0.4);
+        padding: 5px;
+        border-radius: 3px;
+    }
+}

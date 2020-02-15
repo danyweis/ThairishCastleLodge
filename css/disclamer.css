@@ -1,0 +1,15 @@
+body {
+    text-align: justify;
+    padding: 10px;
+    font-family: 'Mitr', sans-serif;
+    color: #2a2a28;
+    background-color: #fafafa;
+}
+
+h4 {
+    text-decoration: underline;
+}
+
+a {
+    color: black;
+}
